@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: none;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+html,
+body {
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    font: 13px/100% Apple SD Gothic Neo, "Apple SD 산돌고딕 Neo", "Roboto", "맑은 고딕",
+        "Malgun Gothic", "Apple Gothic", "나눔고딕", "Nanum Gothic", "돋움", Dotum, "Helvetica Neue",
+        Helvetica, Arial, sans-serif;
+    color: #28222d;
+    border: 0;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+p,
+blockquote,
+table,
+th,
+td,
+embed,
+object,
+textarea,
+a,
+img {
+    padding: 0;
+    margin: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table img {
+    vertical-align: middle;
+}
+
+select,
+input,
+table tr td,
+table tr th {
+    vertical-align: middle;
+}
+
+form,
+fieldset,
+abbr,
+acronym {
+    border: 0;
+}
+
+img {
+    border: 0;
+    vertical-align: top;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+th,
+var {
+    font-weight: normal;
+    font-style: normal;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+table td a {
+    display: inline-block;
+}
+
+table caption {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input[type="image"] {
+    vertical-align: top;
+}
+
+.resume {
+    position: relative;
+}
+
+.resume .paper {
+    position: relative;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 100px 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .resume .paper {
+        padding: 70px 20px;
+    }
+}
+
+.resume .profile {
+    position: relative;
+    text-align: center;
+}
+
+.resume .profile .picture {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    padding: 18px;
+    background-color: #333;
+    border-radius: 150px;
+    background-image: url("images/logo.jpg");
+    background-repeat: no-repeat;
+    background-size: 360%;
+    background-position: center;
+}
+
+.resume .profile .picture img {
+    width: 100%;
+}
+
+.resume .profile .name {
+    padding: 20px 0 4px;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 140%;
+    color: #333;
+    letter-spacing: 2px;
+}
+
+.resume .profile .job {
+    color: #66686b;
+    font-size: 16px;
+    padding: 25px 0 10px;
+}
+
+.resume .profile .nation {
+    color: #a8a8ab;
+    font-size: 16px;
+}
+
+.resume .introduce {
+    padding: 50px 0 60px;
+    font-size: 16px;
+    line-height: 180%;
+    color: #141414;
+    text-align: left;
+    letter-spacing: 0.5px;
+}
+
+.resume section {
+    position: relative;
+    padding-bottom: 60px;
+}
+
+.resume section h3 {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 20px;
+    padding-bottom: 30px;
+    color: #0c0c0c;
+}
+
+.resume section h4 {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    padding-bottom: 30px;
+    color: #0c0c0c;
+}
+
+.resume section h4:nth-child(4) {
+    padding-top: 30px;
+}
+
+.resume section h3>span {
+    padding-left: 3px;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.resume section>ul {
+    margin-left: 15px;
+}
+
+.resume section>ul>li {
+    padding-top: 18px;
+}
+
+.resume section>ul>li:first-child {
+    padding-top: 0;
+}
+
+.resume section>ul>li.new .title>a {
+    color: #141414;
+}
+
+.resume section .date {
+    display: inline-block;
+    color: #8590a0;
+    font-size: 13px;
+    line-height: 140%;
+    padding: 4px 0 0 8px;
+}
+
+.resume section .title {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0.5px;
+    color: #2d2d2d;
+}
+
+.resume section .title span {
+    font-size: 12px;
+    line-height: 140%;
+    padding-left: 5px;
+    color: #a5a5a5;
+    font-family: initial;
+    font-weight: normal;
+}
+
+.resume section .title>a {
+    display: inline-block;
+    position: relative;
+    color: inherit;
+    padding-left: 7px;
+    font-size: 17px;
+}
+
+.resume section .title>a i {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 5px;
+    height: 2px;
+    background-color: #141414;
+    -webkit-transition: width 0.45s cubic-bezier(0.86, 0.16, 0.22, 1.21);
+    -moz-transition: width 0.45s cubic-bezier(0.86, 0.16, 0.22, 1.21);
+    -ms-transition: width 0.45s cubic-bezier(0.86, 0.16, 0.22, 1.21);
+    -o-transition: width 0.45s cubic-bezier(0.86, 0.16, 0.22, 1.21);
+    transition: width 0.45s cubic-bezier(0.86, 0.16, 0.22, 1.21);
+}
+
+.resume section .title>a i.none {
+    background-color: #fff;
+}
+
+.resume section .title>a:hover {
+    color: #141414;
+}
+
+.resume .skills .list {
+    padding-left: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 170%;
+    color: #141414;
+    letter-spacing: 0.5px;
+}
+
+.resume .experience .title,
+.resume .education .title {
+    padding-left: 7px;
+}
+
+.resume.black {
+    background-color: #333;
+}
+
+.resume.black .profile .name {
+    color: #aaa;
+}
+
+.resume.black .introduce {
+    color: #c1c1c1;
+}
+
+.resume.black section .title {
+    color: #c1c1c1;
+}
+
+.resume.black .skills .list {
+    color: #c1c1c1;
+}
